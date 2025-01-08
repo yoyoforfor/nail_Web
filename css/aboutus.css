@@ -1,0 +1,104 @@
+body{
+    width: 100%px;
+    height: 100%px;
+    margin: 0 auto; /* 居中对齐 */
+    padding: 0;
+    
+}
+
+.BC img{
+    width: 100vw;
+    height: 80w;
+    position: absolute;
+    z-index: 1; /* 设置堆叠顺序为1 */
+}
+
+.HOMEimg img{
+    width: 2vw;
+    height: 2vw;
+    position: absolute;
+    
+}
+
+.HOME a{
+    font-size: clamp(12px, 2vw, 16px);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+  
+}
+
+.HOME a:hover {
+    color: #f253b2; /* Change the text color when hovered */
+}
+
+
+
+.backbutton{
+    background: linear-gradient(to right, rgb(255, 197, 210), rgba(255, 255, 255, 0)); 
+    position: absolute;
+    z-index: 4; /* 设置堆叠顺序为1 */
+    display: flex;
+    gap: 3vw; /* Space between text */
+    margin-top: 2vw;
+    margin-left: 2vw;  
+    padding: 2vw;  
+    border-radius: 5vw;
+   
+    
+}
+
+.LOGO img{
+    width: 25vw;
+    height: 16vw;
+    position: absolute;
+    z-index: 2; /* 设置堆叠顺序为1 */
+    animation: rotate-appear 2s ease-in-out forwards;
+
+    
+}
+
+.LOGO{
+    display: flex;
+    justify-content: center; /* Horizontally center */
+}
+
+@keyframes rotate-appear {
+    0% {
+        transform: scale(0) rotate(-360deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.text a{
+    position: absolute;
+    z-index: 3; /* 设置堆叠顺序为1 */
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #3c3c3c;
+    
+    align-items: center; 
+}
+
+.text{
+    
+    justify-content: center;
+    font-size: clamp(6px, 1vw, 10px);
+    margin-top: 21vw; 
+    margin-left: 37vw;
+    line-height: 2vw;
+}
+
+.size a{
+    
+}
+
+

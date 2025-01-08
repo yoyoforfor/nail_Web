@@ -1,0 +1,478 @@
+body {
+    width: 1280px;  /* 固定宽度 */
+    height: 1753px; /* 固定高度 */
+    margin: 0 auto; /* 居中对齐 */
+    padding: 0;
+    
+    background: linear-gradient(to bottom, #FFB3D2, #78ACE8, #BED1F1, #C5EDD0);
+  }
+  
+  
+
+.title .title_img img{
+    width: 1280px;
+    height: 820px;
+    position: absolute;
+    z-index: 2; /* 设置堆叠顺序为1 */
+  
+   
+}
+
+.title .ID_img img{
+    width: 816px;
+    height: 816px;
+    position: absolute;
+    z-index: 1; /* 设置堆叠顺序为2，位于 img1 之上 */
+    float: right; /* 图片向右浮动 */
+    margin-left: 465px;
+    
+}
+
+.ani1 img{ 
+    width: 200px;
+    height: 195px;
+    position: absolute;
+    z-index: 7; /* 设置堆叠顺序为2，位于 img1 之上 */
+    padding-top: 625px;
+    padding-left: 100px;
+    animation: fall 3s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+}
+
+
+
+.ani2 img{
+    width: 126px;
+    height: 123px;
+    position: absolute;
+    z-index: 8; /* 设置堆叠顺序为2，位于 img1 之上 */
+    padding-top: 580px;
+    padding-left: 0px;
+    
+    
+}
+
+
+.ani3 img{
+    width: 297px;
+    height: 145px;
+    padding-top: 490px;
+    padding-left: 502px;
+    transform: rotate(50deg); /* 顺时针旋转45度 */
+}
+
+.ani3{
+    position: absolute;
+    z-index: 9; /* 设置堆叠顺序为2，位于 img1 之上 */
+  
+}
+
+
+ 
+  
+
+section{
+    position: relative;
+}
+
+header .button_2  img{
+    width: 42px;
+    height: 43px;
+    margin-right: 10px;
+}
+
+.button_2{
+    display: flex;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+  height: 107px;
+  background: linear-gradient(to bottom, rgba(197, 237, 208, 1), rgba(255, 255, 255, 0)); 
+  position: absolute;
+  z-index: 10; /* 设置堆叠顺序为1 */
+  
+}
+
+header .button a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 22px; /* 设置文字大小 */
+    
+    color: #828282;
+    text-decoration: none;
+    margin-left: 40px;
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+    
+}
+
+header .button a:hover {
+    color: #fa65be; /* Change the text color when hovered */
+}
+
+header .button{
+    margin-top: 16px;
+}
+
+.title_2{
+    display: flex;
+}
+
+.title_2 .PK .DC_img img{
+    width: 57px;
+    height: 56px;
+    border-radius: 30px;
+    margin-top: 9px;
+    margin-left: 30px;
+    box-shadow: inset 10px 10px 5px rgba(0, 0, 0, 0.7); /* 添加内阴影 */
+}
+
+
+
+.title_2 .PK{
+    margin-top: 818px;
+    display: flex;
+    border-radius: 0px 35px 35px 0px;
+    width: 754px;
+    height: 74px;
+
+    background: linear-gradient(to right, rgba(255, 179, 210, 1), rgba(255, 255, 255, 0.4)); 
+}
+
+.title_2 .PK .tex a{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size:20px ;
+   
+   color: #ffffff;
+   display: flex;
+   justify-content: center;  /* 水平居中 */
+   align-items: center;  /* 垂直居中 */
+   margin-left: 50px;
+   margin-top: 25px;
+}
+
+.hand_img img{
+    width: 124px;
+    height: 220px;
+    margin-top: 673px;
+    transform: translateX(-230px); /* 将图片向左移动20像素 */
+    position: absolute;
+    z-index: 3; /* 设置堆叠顺序为1 */
+}
+
+.sky{
+    margin-top: 817px;
+    
+}
+
+.sky img{
+    width: 316px;
+    height: 74px;
+    position: absolute;
+    z-index: 1; /* 设置堆叠顺序为1 */
+    border-radius:35px
+}
+
+.sky a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    position: absolute;
+    z-index: 2; /* 设置堆叠顺序为1 */
+    margin-left: 100px;
+    margin-top: 28px;
+
+}
+
+.LOGO{
+    animation: rotate-in 2s ease-in-out forwards;
+}
+
+.LOGO img{
+    width: 386px;
+    height: 266px;
+    position: absolute;
+    z-index: 5; /* 设置堆叠顺序为1 */
+    margin-left: 650px;
+    margin-top: 0px;
+    transform: scale(0) rotate(-360deg);
+    opacity: 0;
+    animation: rotate-appear 2s ease-in-out forwards;
+}
+
+@keyframes rotate-appear {
+    0% {
+        transform: scale(0) rotate(-360deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.GR{
+    margin-top: 817px;
+    margin-left: 317px;
+    width: 210px;
+    height: 74px;
+    background: linear-gradient(to right, rgba(180, 243, 194, 1), rgba(255, 255, 255, 0.4)); 
+    border-radius:35px 0px 0px 35px;
+}
+
+.GR a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: #F274D7;
+    position: absolute;
+    z-index: 7; /* 设置堆叠顺序为1 */
+    margin-left:25px ;
+    margin-top: 18px;
+}
+
+.hand2 img{
+    width: 130px;
+    height: 160px;
+    margin: 732px;
+    margin-left: 380px;
+    position: absolute;
+    z-index: 6; /* 设置堆叠顺序为1 */
+   
+}
+
+.BC_img img{
+    width: 1280px;
+    height: 860px;
+    position: absolute;
+    z-index: 1; /* 设置堆叠顺序为1 */
+}
+
+
+.LOGO2 img{
+    width: 183px;
+    height: 126px;
+    position: absolute;
+    z-index: 2; /* 设置堆叠顺序为1 */
+    margin-left: 540px;
+    margin-top: 30px;
+}
+
+.whatnew a{
+    font-size: 33px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #D155B6;
+    margin-left: 510px;
+    margin-top: 190px;
+    position: absolute;
+    z-index: 3; /* 设置堆叠顺序为1 */
+    
+}
+
+.shop img{
+    position: absolute;
+    z-index: 4; /* 设置堆叠顺序为1 */
+    width: 48px;
+    height: 48px;
+    margin-left: 1160px;
+    margin-top: 70px;
+    background-color: #C5EDD0;
+    border-radius: 35px;
+    padding: 5px;
+}
+
+.Product img{
+    width: 272px;
+    height: 272px;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Make sure the image scales properly */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    
+}
+
+.Product img:hover {
+    transform: scale(0.9); /* Scale down the image */
+}
+
+.Product{
+    display: grid;
+    grid-auto-flow: column; /* 设置图片横向排列 */
+    gap: 40px;     
+    position: absolute;
+    z-index: 5; /* 设置堆叠顺序为1 */
+    margin: 40px;
+    margin-top: 260px;
+    
+}   
+
+footer .big a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    color: #D155B6;
+    
+}
+
+.big{
+    justify-content: center;
+    display: flex;
+    margin-top: 70px;
+}
+
+
+.cent{
+    
+    display: flex;
+    margin-top: 70px;
+    
+    justify-content: center; /* 水平置中 */
+    gap: 700px;       
+   
+}
+
+.cent a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: #D155B6;
+    
+    
+}
+
+.min{
+    display: flex;
+    
+    justify-content: center; /* 水平置中 */
+    gap: 150px;  
+    margin-left: 70px;     
+}
+.min a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 10px;
+    color: #696969;
+}
+
+.min1{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.min2{
+    text-align: center;
+}
+
+.min3{
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer{
+    background: linear-gradient(to top, rgba(180, 243, 194, 1), rgba(255, 255, 255, 0)); 
+    position: absolute;
+    z-index: 6; /* 设置堆叠顺序为1 */
+    width: 1280px;
+    height: 322px;
+    margin-top:538px ;
+    
+}
+
+/* 平板版 (寬度768px - 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    body {
+      width: 100%; /* 使內容填滿螢幕 */
+      height: auto; /* 移除固定高度 */
+      margin: 0;
+      padding: 0;
+    }
+  
+    header {
+      flex-direction: column; /* 將導覽與社交圖標改為上下排列 */
+      align-items: center;
+      height: auto;
+    }
+  
+    header .button a {
+      font-size: 18px; /* 調整字體大小 */
+    }
+  
+    .title .title_img img {
+      width: 100%; /* 使圖片自適應寬度 */
+      height: auto;
+    }
+  
+    .LOGO img {
+      margin-left: auto;
+      margin-right: auto;
+      display: block; /* LOGO置中 */
+      width: 200px; /* 縮小LOGO大小 */
+    }
+  
+    .Product {
+      grid-template-columns: 1fr 1fr; /* 每行顯示兩張圖片 */
+      gap: 20px; /* 減小間距 */
+    }
+  
+    footer {
+      height: auto;
+      margin-top: 30px;
+    }
+  }
+  
+  /* 手機版 (寬度小於768px) */
+  @media screen and (max-width: 768px) {
+    body {
+      width: 100%;
+      padding: 0;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+  
+    header .button a {
+      font-size: 16px; /* 再次縮小字體 */
+      margin: 10px 0;
+    }
+  
+    .LOGO img {
+      width: 150px; /* 繼續縮小LOGO大小 */
+      height: auto;
+    }
+  
+    .title .ID_img img {
+      width: 100%;
+      height: auto;
+      margin-left: 0; /* 移除左邊距 */
+    }
+  
+    .PK {
+      flex-direction: column; /* 改為縱向排列 */
+      width: 100%; /* 填滿寬度 */
+      height: auto; /* 移除固定高度 */
+    }
+  
+    .Product {
+      grid-template-columns: 1fr; /* 每行顯示一張圖片 */
+      gap: 10px; /* 減小間距 */
+    }
+  
+    footer {
+      text-align: center; /* 文字置中 */
+    }
+  
+    .min {
+      flex-direction: column; /* 將內容縱向排列 */
+      gap: 10px;
+    }
+  
+    .min a {
+      font-size: 12px; /* 調整文字大小 */
+    }
+  }
+  

@@ -1,0 +1,305 @@
+/* 全局樣式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #E6F6E8, #E6F6E8); /* 背景漸層改為垂直方向 */
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header 樣式 */
+.details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #ff7eb3, #ffc78e); /* Header 背景漸層改為垂直方向 */
+}
+
+.back-button {
+    background: #f8a5c2;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.cart-icon {
+    font-size: 20px;
+    color: white;
+}
+
+/* 主內容樣式 */
+.details-main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product-image {
+    flex: 1;
+    text-align: center;
+    max-width: 300px;
+    margin: 20px;
+}
+
+/* 轮播容器样式 */
+.image-carousel {
+    overflow: hidden; /* 隐藏溢出的图片 */
+    width: 300px;     /* 设置固定宽度 */
+    height: 300px;    /* 设置固定高度 */
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 图片容器样式 */
+  .carousel-container {
+    display: flex;
+    width: calc(300px * 3); /* 总宽度是单张图片宽度的倍数 */
+    animation: slide 9s infinite; /* 滑动动画，每 9 秒循环 */
+  }
+  
+  /* 单张图片样式 */
+  .carousel-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* 确保图片保持比例 */
+  }
+  
+  /* 滑动动画 */
+  @keyframes slide {
+    0% {
+      transform: translateX(0); /* 第一张图片 */
+    }
+    33% {
+      transform: translateX(-300px); /* 第二张图片 */
+    }
+    
+    100% {
+      transform: translateX(0); /* 回到第一张图片 */
+    }
+  }
+  
+  
+  /* 滑鼠懸停時啟動動畫 */
+  .image-carousel:hover {
+    animation: slide 3s infinite;
+  }
+  
+
+.image-placeholder {
+    width: 100%;
+    padding-top: 100%;
+    background: #fbc2eb;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    flex: 2;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #e91e63;
+    text-shadow: 1px 1px #fbc2eb;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* 尺寸選擇 */
+.size-options {
+    margin: 20px 0;
+}
+
+.size-btn {
+    background: #ffba9d;
+    color: #ffffff;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.size-btn:hover {
+    background: #ef6ab8;
+    color: #ffffff;
+}
+
+.size-btn.active {
+    background: #ff80ab;
+    color: white;
+    border: 1px solid #ff4081;
+}
+
+/* 操作按鈕 */
+.action-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.add-to-cart {
+    background: #ffc107;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background: #ffa000;
+}
+
+.buy-directly {
+    background: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.buy-directly:hover {
+    background: #d32f2f;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #E6F6E8, #B4F3C2);
+    color: #555;
+    width: 100%;
+}
+/* 平板與手機響應式設計 */
+@media (max-width: 1024px) {
+    /* 平板樣式 */
+    .details-main {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-image {
+      max-width: 80%;
+      margin: 10px auto;
+    }
+  
+    .product-info {
+      max-width: 90%;
+      padding: 10px;
+    }
+  
+    .product-title {
+      font-size: 28px;
+    }
+  
+    .product-description {
+      font-size: 14px;
+    }
+  
+    .size-btn {
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+  
+    .add-to-cart, .buy-directly {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* 手機樣式 */
+    .details-header {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .back-button, .cart-icon {
+      font-size: 16px;
+    }
+  
+    .product-image {
+      max-width: 100%;
+      margin: 10px 0;
+    }
+  
+    .image-carousel {
+      width: 100%;
+      height: auto;
+    }
+  
+    .carousel-image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .product-info {
+      max-width: 100%;
+      padding: 5px;
+    }
+  
+    .product-title {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .product-description {
+      font-size: 12px;
+      text-align: center;
+    }
+  
+    .size-options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .size-btn {
+      margin: 5px;
+      padding: 6px 10px;
+      font-size: 10px;
+    }
+  
+    .add-to-cart, .buy-directly {
+      margin: 5px auto;
+      padding: 6px 12px;
+      font-size: 10px;
+      width: 90%;
+    }
+  }
+  
